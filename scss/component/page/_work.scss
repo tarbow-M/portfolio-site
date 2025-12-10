@@ -175,6 +175,55 @@
     }
   }
 
+// &-outline {
+//     &__text {
+//       // 既存のpタグのスタイル
+//       p {
+//         line-height: 1.6; // 読みやすさのため行間を確保
+
+//         & + p {
+//           margin: 16px 0 0 0;
+
+//           @include xs {
+//             margin: 12px 0 0 0;
+//           }
+//         }
+//       }
+
+//       // 【追記】見出し（h4）のスタイル
+//       h4 {
+//         margin: 32px 0 12px; // 上下の余白
+//         font-size: 1.8rem;
+//         font-weight: 700;
+        
+//         // 最初の見出しだけ上の余白をなくす
+//         &:first-child {
+//           margin-top: 0;
+//         }
+
+//         @include xs {
+//           margin: 24px 0 8px;
+//           font-size: 1.6rem;
+//         }
+//       }
+
+//       // 【追記】リスト（ul, li）のスタイル
+//       ul {
+//         margin: 8px 0 16px 1.5em; // 左にインデント
+//         list-style: disc; // 黒丸リスト
+
+//         @include xs {
+//           margin-bottom: 12px;
+//         }
+
+//         li {
+//           margin-bottom: 4px;
+//           line-height: 1.5;
+//         }
+//       }
+//     }
+//   }
+
   &-outline {
     &__text {
       p {
